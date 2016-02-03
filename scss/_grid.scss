@@ -1,0 +1,33 @@
+.row {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  @include clearfix;
+}
+
+
+.column {
+  float: left;
+  margin-right: 2%;
+
+
+  &.two-third {
+    width: 65%;
+  }
+  &.one-half {
+    width: 49%;
+  }
+  &.one-third {
+    width: 32%
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  @media (max-width: 500px) {
+
+    width: 100% !important;
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,34 @@
+a {
+  transition: 333ms all ease-in-out;
+}
+
+nav a:hover {
+  color: #17B890;
+}
+
+.button
+{
+    background: #EE6C4D;
+    color: white;
+    padding: 10px 15px;
+    font-size: 13px;
+    text-decoration: none;
+
+
+    &:hover
+    {
+      background: #293241;
+        color: white;
+    }
+}
+
+main a
+{
+    color: #EE6C4D;
+    text-decoration: none;
+}
+
+main a:hover 
+{
+    color: #293241;
+}

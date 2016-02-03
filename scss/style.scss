@@ -1,0 +1,74 @@
+@import "colors";
+
+@import "mixins";
+
+@import "grid";
+
+@import "defualt";
+
+@import "linkstyles";
+
+@import "header";
+
+@import "nav";
+
+@import "hero";
+
+@import "blog";
+
+@import "main";
+
+@import "footer";
+
+
+
+
+
+
+/*----- Padding Fix -----*/
+
+
+
+/*----- Clear Fix -----*/
+
+
+
+/*----- Body Styles -----*/
+
+
+
+
+
+
+/*----- Grid -----*/
+
+
+
+/*----- iframe -----*/
+
+
+
+
+
+/*----- Main, Hero -----*/
+
+
+
+
+
+
+
+/*----- Media Queries -----*/
+
+@media (max-width: 500px) {
+
+  
+
+  header nav {
+    float: none;
+    text-align: center;
+  }
+
+  
+}
+

@@ -4,7 +4,7 @@
 
 <?php include 'header.php'; ?>
     <main>
-        <div class="row clearfix">
+        <div class="row">
             <div class="column one-half">
                 <h3>Column Headline</h3>
 

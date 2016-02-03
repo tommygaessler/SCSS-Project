@@ -1,0 +1,55 @@
+/*----- Header ----- */
+
+header
+{
+	background: #293241;
+	padding: 10px;
+    
+
+
+	body#home &
+	{
+		margin-bottom: 0px;
+	}
+
+	.row
+	{
+		margin-bottom: 0px;
+	}
+
+	nav
+	{
+		float: right;
+		text-align: right;
+	}
+
+
+	.logo
+	{
+		float: left;
+		width:65px;
+	}
+
+
+
+	.margin
+	{
+	    margin-top: 20px;
+	}
+
+	@media (max-width: 500px) {
+
+		text-align: center;
+		
+
+		.logo 
+		{
+	    float: none;
+	    width: 80px;
+	  	}
+	 }
+}
+
+
+
+

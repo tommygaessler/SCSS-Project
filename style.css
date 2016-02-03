@@ -83,7 +83,10 @@ header {
       text-align: center; }
       header .logo {
         float: none;
-        width: 80px; } }
+        width: 80px; }
+      header nav {
+        float: none;
+        text-align: center; } }
 
 nav {
   padding-top: 21px; }
@@ -103,9 +106,13 @@ nav {
   background-attachment: fixed; }
   .hero h1 {
     margin: 0;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    padding: 40px;
     color: #17B890;
     text-shadow: 0 0 10px #444;
-    text-align: center; }
+    text-align: center;
+    border: 5px solid #17B890; }
 
 .blog-roll {
   padding-left: 0; }

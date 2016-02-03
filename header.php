@@ -3,6 +3,8 @@
 
     $userName = 'Tommy';
 
+    $fullName = 'Tommy Gaessler';
+
 ?>
 
 <!DOCTYPE html>

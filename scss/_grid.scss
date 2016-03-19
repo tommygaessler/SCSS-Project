@@ -1,31 +1,51 @@
-.row {
+/*----- Grid -----*/
+$gutter: 2%;
+
+.row
+{
   width: 90%;
   max-width: 800px;
   margin: auto;
   @include clearfix;
 }
 
-
-.column {
+.column 
+{
   float: left;
-  margin-right: 2%;
+  margin-right: $gutter;
 
 
-  &.two-third {
-    width: 65%;
-  }
-  &.one-half {
-    width: 49%;
-  }
-  &.one-third {
-    width: 32%
+  &.two-third 
+  {
+    width: (((100% / 3) * 2) - $gutter); //65%
   }
 
-  &:last-of-type {
+  &.one-half 
+  {
+    width: ((100% - ($gutter * 1)) / 2); //49%
+  }
+
+  &.one-third 
+  {
+    width: ((100% - ($gutter * 2)) / 3); //32%
+  }
+
+  &.one-fourth 
+  {
+    width: ((100% - ($gutter * 3)) / 4); //23.5%
+  }
+
+  &.one-fifth 
+  {
+    width: ((100% - ($gutter * 4)) / 5); //18.5%
+  }
+
+  &:last-of-type 
+  {
     margin-right: 0;
   }
 
-  @media (max-width: 500px) {
+  @include breakpoint(phone) {
 
     width: 100% !important;
     margin-right: 0;

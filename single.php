@@ -1,41 +1,51 @@
 <?php 
-// Get the post ID form the URL
-$postID = urldecode($_GET["post"]);
+    // Get the post ID form the URL
+    $postID = urldecode($_GET["post"]);
 
-include ('posts/'.$postID.'.php');
+    include ('posts/'.$postID.'.php');
 
 
-$pageTitle = $postTitle;
+    $pageTitle = $postTitle;
 
-$posts = scandir('posts/');
+    $posts = scandir('posts/');
 
-$postCount = '';
+    $postCount = '';
 
-foreach($posts as $post)
-{
-    if (pathinfo($post, PATHINFO_EXTENSION) == "php")
+    foreach($posts as $post)
     {
-        $postCount++;
+        if (pathinfo($post, PATHINFO_EXTENSION) == "php")
+        {
+            $postCount++;
+        }
     }
-}
 
 ?>
 
 <?php include 'header.php' ?>
 <main>
-    <div class="row">
+    <div class="row post-content">
         <h3><?php echo $postTitle; ?></h3>
 
-        <?php echo $postPicture?>
+        <?php 
+            if(!empty($postFeatureImage))
+            {
+                echo '<img class="feature-image" src="/posts/feature-images/'.$postFeatureImage.'">';
+            }
+        ?>
     
-        <p><?php echo $postContent; ?></p>
+        <?php echo $postContent; ?>
+
+        <hr>
+
         <div class="post-navigation">
+            <!-- Hide previous link on first -->
             <?php if($postID - 1 > 0) : ?>
-            <a href="/single.php?post=0<?php echo $postID - 1; ?>">Previous</a>
+                <a class="button previous" href="/single.php?post=0<?php echo $postID - 1; ?>">Previous</a>
             <?php endif; ?>
             
             <?php if($postID < $postCount) : ?>
-            <a href="/single.php?post=0<?php echo $postID + 1; ?>">Next</a>
+                <!-- Hide next link on last post -->
+                <a class="button next" href="/single.php?post=0<?php echo $postID + 1; ?>">Next</a>
             <?php endif; ?>
         </div>
     </div>

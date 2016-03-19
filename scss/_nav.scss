@@ -2,17 +2,62 @@ nav
 {
 	padding-top: 21px;
 
+	@include breakpoint(phone) 
+	{
+
+		display: none;
+
+		&.toggled
+		{
+			display: block;
+			float: left;
+			width: 100%;
+		}
+
+		header &
+		{
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+	}
+
 	a 
 	{
 		margin-right: 20px;
 	  	font-size: 13px;
-	  	color: #E0FBFC;
+	  	color: $white;
 	  	text-decoration: none;
-
 
 		&:last-of-type
 		{
 			margin: 0px;
 		}
+	}
+}
+
+#menuToggle
+{
+	display: none;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	font-size: 20px;
+	float: right;
+	color: $orange;
+
+	&.toggled {
+		.genericon:before {
+			content: '\f406';
+		}
+	}
+
+	&:hover
+	{
+		color: $white;
+	}
+
+	@include breakpoint(phone)
+	{
+		display: block;
 	}
 }

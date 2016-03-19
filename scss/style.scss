@@ -1,12 +1,24 @@
+@import "lightbox";
+
+//Libraires
+
 @import "colors";
+
+@import"typography";
+
+@import "breakpoints";
 
 @import "mixins";
 
 @import "grid";
 
+//Modules or Defualt Styles
+
 @import "defualt";
 
 @import "linkstyles";
+
+@import "media";
 
 @import "header";
 
@@ -16,59 +28,10 @@
 
 @import "blog";
 
+@import "single";
+
+@import "gallery";
+
 @import "main";
 
 @import "footer";
-
-
-
-
-
-
-/*----- Padding Fix -----*/
-
-
-
-/*----- Clear Fix -----*/
-
-
-
-/*----- Body Styles -----*/
-
-
-
-
-
-
-/*----- Grid -----*/
-
-
-
-/*----- iframe -----*/
-
-
-
-
-
-/*----- Main, Hero -----*/
-
-
-
-
-
-
-
-/*----- Media Queries -----*/
-
-@media (max-width: 500px) {
-
-  
-
-  header nav {
-    float: none;
-    text-align: center;
-  }
-
-  
-}
-

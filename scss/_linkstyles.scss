@@ -1,34 +1,35 @@
-a {
-  transition: 333ms all ease-in-out;
+a 
+{
+    @include ease;
 }
 
-nav a:hover {
-  color: #17B890;
+nav a:hover 
+{
+    color: $green;
 }
 
 .button
 {
-    background: #EE6C4D;
-    color: white;
+    background: $orange;
+    color: $white;
     padding: 10px 15px;
     font-size: 13px;
     text-decoration: none;
 
-
     &:hover
     {
-      background: #293241;
-        color: white;
+        background: $navy;
+        color: $teal;
     }
 }
 
 main a
 {
-    color: #EE6C4D;
+    color: $orange;
     text-decoration: none;
 }
 
 main a:hover 
 {
-    color: #293241;
+    color: $navy;
 }

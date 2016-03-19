@@ -1,17 +1,33 @@
 .blog-roll
 {
+
+	img
+	{
+
+		@include ease;
+
+		&:hover
+		{
+			opacity: 0.8;
+		}
+	}
+
     padding-left: 0;
-}
 
-.blog-roll li
-{
-    display: block;
-    list-style: none;
-    margin-bottom: 60px;
-}
+	& li
+	{
+	    display: block;
+	    list-style: none;
+	    margin-bottom: 60px;
 
-.blog-roll li p
-{
-    color: #293241;
-    margin-bottom: 25px;
+
+	
+		p
+		{
+		    color: $navy; 
+		    margin-bottom: 25px;
+		}
+
+		cursor: pointer;
+	}
 }

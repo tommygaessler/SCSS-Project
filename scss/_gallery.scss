@@ -1,0 +1,20 @@
+body#gallery
+{
+	.gallery-roll
+	{
+		a
+		{
+			display: block;
+			float: left;
+			width: 33%;
+			height: 20vh;
+			@include background-image(scroll);
+			@include ease;
+
+			&:hover
+			{
+				opacity: 0.8;
+			}
+		}
+	}
+}

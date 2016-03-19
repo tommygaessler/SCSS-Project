@@ -1,17 +1,28 @@
+/*----- Body Styles -----*/
+
 *
 {
 	box-sizing: border-box;
 }
 
-body {
-  padding: 0;
-  margin: 0;
-  font-family: 'Open Sans', helvetica, sans-serif;
-  background: $navy;
+body 
+{
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', helvetica, sans-serif;
+	background: $navy;
 }
+
+/*----- iframe -----*/
 
 iframe
 {
-    max-width: 100%;
-    margin: 18.720px;
+	width: 100%;
+    margin-top: 18.72px;
+}
+
+hr
+{
+	margin: 40px 0;
+	border-color: $orange;
 }

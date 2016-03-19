@@ -1,0 +1,27 @@
+.feature-image
+{
+	width:100%;
+}
+
+.post-content
+{
+	// img
+	// {
+	// 	box-shadow: 
+	// }
+}
+
+	.post-navigation
+	{
+		@include clearfix;
+
+		.previous
+		{
+			float: left;
+		}
+
+		.next
+		{
+			float: right;
+		}
+	}

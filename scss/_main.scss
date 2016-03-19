@@ -1,21 +1,47 @@
 img
 {
-  width: 100%;
-}
+  //width: 100%;
 
-body#home main 
-{
-    padding-top: 0;
+  &:hover
+  {
+    // opacity: 0.8;
+    // @include ease;
+  }
 }
 
 main
 {
-    background-color: #FFFFFF;
+    background-color: $white;
     padding-top: 1px;
-    padding-bottom: 1px;
+    padding-bottom: 20px;
+    /*padding-top: 80px;*/
+
+    body#home &
+	{
+	    padding-top: 0px;
+
+	    /*
+        padding-top: 80px;
+
+        @media (max-width: 500px){
+	    	padding-top: 140px;
+	    }*/
+	}
+
+    body#blog &
+    {
+        padding-bottom: 0;
+    }
+
+    /*@media (max-width: 500px){
+    	padding-top: 140px;
+    }*/
+
+    
+
 }
 
 h3
 {
-    color: #EE6C4D;
+    color: $orange;
 }

@@ -2,18 +2,50 @@
 
 footer
 {
-	background: #293241;
-	
+	background: $navy;
 	font-size: 11px;
 	text-align: center;
     
-}
+	p
+	{
+	    
+	    color: $white;
+	    margin: 0;
+	    padding-top: 21px;
+	    padding-bottom: 21px;
+	}
 
-footer p
-{
-    
-    color: #E0FBFC;
-    margin: 0;
-    padding-top: 21px;
-    padding-bottom: 21px;
+	#menuToggle
+	{
+		display: none;
+	}
+
+	.social
+	{
+		padding-top: 21px;
+
+		a
+		{
+		text-decoration: none;
+		color: $white;
+		}
+
+		span
+		{
+			background-color: $orange;
+			border-radius: 50px;
+			padding: 5px;
+			margin-right: 5px;
+			margin-left: 5px;
+			@include ease;
+
+			&:hover
+			{
+				color: $orange;
+				background-color: $white;
+
+			}
+		}
+	}
+
 }

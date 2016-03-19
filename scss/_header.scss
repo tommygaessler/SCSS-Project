@@ -2,10 +2,10 @@
 
 header
 {
-	background: #293241;
+	background: $navy;
 	padding: 10px;
-    
-
+	/*position: fixed;*/
+	width: 100%;
 
 	body#home &
 	{
@@ -23,37 +23,39 @@ header
 		text-align: right;
 	}
 
-
 	.logo
 	{
 		float: left;
 		width:65px;
 	}
 
+	
 
-
-	.margin
-	{
-	    margin-top: 20px;
-	}
-
-	@media (max-width: 500px) {
+	@include breakpoint(phone) {
 
 		text-align: center;
 		
-
 		.logo 
 		{
-	    float: none;
-	    width: 80px;
+			float: none;
+		    width: 80px;
+		    margin: auto;
+		    display: block;
 	  	}
 
-
-		nav {
-		  float: none;
-		  text-align: center;
-  }
-	 }
+		nav 
+		{
+			float: none;
+			text-align: center;
+			a 
+			{
+				display: block;
+				width: 100%;
+				padding: 5px;
+				border-bottom: 3px solid $orange;
+			}
+  		}
+	}
 }
 
 

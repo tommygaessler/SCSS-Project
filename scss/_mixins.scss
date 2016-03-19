@@ -1,7 +1,8 @@
+/*----- Clear Fix -----*/
+
 @mixin clearfix
 {
   	*zoom: 1;
-
 
 	&:before,
 	&:after 
@@ -16,3 +17,32 @@
 	}
 }
 
+@mixin ease ($time: 555ms)
+{
+	transition: $time;
+}
+
+
+@mixin background-image($behavior: fixed) {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: $behavior !important;
+
+    // Attachment scroll on mobile and unsupported browsers
+    html.touch & { 
+        background-attachment: scroll !important; 
+    }
+}
+
+
+@mixin breakpoint($name) {
+    @if map-has-key($breakpoints, $name) {
+        @media #{inspect(map-get($breakpoints, $name))} {
+            @content;
+        }
+    }
+    @else {
+        @warn "Couldn't find a breakpoint named `#{$name}`.";
+    }
+}
